@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655135151214" clover="3.2.0">
+  <project timestamp="1655135151214" name="All files">
+    <metrics statements="17" coveredstatements="13" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="5" elements="26" coveredelements="18" complexity="0" loc="17" ncloc="17" packages="1" files="2" classes="2"/>
+    <file name="drinkOrderAdapter.ts" path="/Users/christophecharlebois/Documents/coffee-machine/src/drinkOrderAdapter.ts">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+    </file>
+    <file name="index.ts" path="/Users/christophecharlebois/Documents/coffee-machine/src/index.ts">
+      <metrics statements="6" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="48" count="2" type="cond" truecount="0" falsecount="2"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
