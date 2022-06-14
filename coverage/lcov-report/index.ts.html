@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -121,28 +121,7 @@
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L59'></a><a href='#L59'>59</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -174,17 +153,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -193,33 +181,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export type Drink  = 'tea' | 'coffee' | 'chocolate'
 &nbsp;
-type Tea = {
-    name: 'tea',
-    price: 0.4
-}
-&nbsp;
-type Coffee = {
-    name: 'coffee',
-    price: 0.6
-}
-&nbsp;
-type Chocolate = {
-    name: 'chocolate',
-    price: 0.5
-}
+export type Pricing = 0.4 | 0.5 | 0.6
 &nbsp;
 export type Sugar = 0 | 1 | 2
 &nbsp;
 export type Stick = "with_stick" | "without_stick"
 &nbsp;
 export type DrinkOrder = {
-    drink: Tea | Coffee | Chocolate
+    drink: Drink
     sugar: Sugar
 }
 &nbsp;
-type Command = {
+export type Command = {
     drinkOrder: DrinkOrder
-    AmmountGiven: number,
+    ammountGiven: number,
 }
 &nbsp;
 export type NoSugarDrinkMaker = {
@@ -234,22 +209,29 @@ export type WithSugarDrinkMaker = {
     stick: 'with_stick'
 }
 &nbsp;
+const pricingMapping: Record&lt;Drink, Pricing&gt; = {
+    tea: 0.4,
+    coffee: 0.6,
+    chocolate: 0.5
+}
+&nbsp;
+&nbsp;
 export type DrinkMaker = NoSugarDrinkMaker | WithSugarDrinkMaker 
 &nbsp;
-export const enhanceOrder = ({drinkOrder, AmmountGiven}: Command): DrinkMaker =&gt; {
-&nbsp;
-    if(AmmountGiven &lt; drinkOrder.drink.price){
-<span class="cstat-no" title="statement not covered" >        throw new Exception</span>
+export const enhanceOrder = ({drinkOrder, ammountGiven}: Command): DrinkMaker | string=&gt; {
+    const price = pricingMapping[drinkOrder.drink]
+    if(ammountGiven &lt; price){
+        return 'not enough money'
     }
-<span class="cstat-no" title="statement not covered" >    if (drinkOrder.sugar &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >        return {</span>
-            drink: drinkOrder.drink.name,
+    if (drinkOrder.sugar &gt; 0) {
+        return {
+            drink: drinkOrder.drink,
             sugar: drinkOrder.sugar,
             stick: 'with_stick'
         }
     }
-<span class="cstat-no" title="statement not covered" >    return {</span>
-        drink: drinkOrder.drink.name,
+    return {
+        drink: drinkOrder.drink,
         sugar: drinkOrder.sugar,
         stick: "without_stick"
     }
@@ -262,7 +244,7 @@ export const enhanceOrder = ({drinkOrder, AmmountGiven}: Command): DrinkMaker =&
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Jun 13 2022 17:45:51 GMT+0200 (heure d’été d’Europe centrale)
+                at Tue Jun 14 2022 12:01:50 GMT+0200 (heure d’été d’Europe centrale)
             </div>
         <script src="prettify.js"></script>
         <script>

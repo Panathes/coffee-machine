@@ -1,32 +1,19 @@
 export type Drink  = 'tea' | 'coffee' | 'chocolate'
 
-type Tea = {
-    name: 'tea',
-    price: 0.4
-}
-
-type Coffee = {
-    name: 'coffee',
-    price: 0.6
-}
-
-type Chocolate = {
-    name: 'chocolate',
-    price: 0.5
-}
+export type Pricing = 0.4 | 0.5 | 0.6
 
 export type Sugar = 0 | 1 | 2
 
 export type Stick = "with_stick" | "without_stick"
 
 export type DrinkOrder = {
-    drink: Tea | Coffee | Chocolate
+    drink: Drink
     sugar: Sugar
 }
 
-type Command = {
+export type Command = {
     drinkOrder: DrinkOrder
-    AmmountGiven: number,
+    ammountGiven: number,
 }
 
 export type NoSugarDrinkMaker = {
@@ -41,22 +28,29 @@ export type WithSugarDrinkMaker = {
     stick: 'with_stick'
 }
 
+const pricingMapping: Record<Drink, Pricing> = {
+    tea: 0.4,
+    coffee: 0.6,
+    chocolate: 0.5
+}
+
+
 export type DrinkMaker = NoSugarDrinkMaker | WithSugarDrinkMaker 
 
-export const enhanceOrder = ({drinkOrder, AmmountGiven}: Command): DrinkMaker => {
-
-    if(AmmountGiven < drinkOrder.drink.price){
-        throw new Exception
+export const enhanceOrder = ({drinkOrder, ammountGiven}: Command): DrinkMaker | string=> {
+    const price = pricingMapping[drinkOrder.drink]
+    if(ammountGiven < price){
+        return 'not enough money'
     }
     if (drinkOrder.sugar > 0) {
         return {
-            drink: drinkOrder.drink.name,
+            drink: drinkOrder.drink,
             sugar: drinkOrder.sugar,
             stick: 'with_stick'
         }
     }
     return {
-        drink: drinkOrder.drink.name,
+        drink: drinkOrder.drink,
         sugar: drinkOrder.sugar,
         stick: "without_stick"
     }
