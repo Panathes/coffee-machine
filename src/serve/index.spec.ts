@@ -1,12 +1,12 @@
-import { DrinkMaker, DrinkOrder, enhanceOrder, Command } from ".";
+import { DrinkOrder, enhanceOrder, Command } from ".";
 
 it("Expected coffee with sugar and stick", function (){
     const drinkOrder: Command = {
-        drinkOrder: {drink:'coffee', sugar:1  },
+        drinkOrder: {drink:'coffee', sugar:1, stick: 'with_stick'  },
         ammountGiven: 0.6
     }
 
-    const drinkMakerExpect: DrinkMaker = {
+    const drinkMakerExpect: DrinkOrder = {
         drink: 'coffee',
         sugar: 1,
         stick: 'with_stick'
@@ -16,10 +16,10 @@ it("Expected coffee with sugar and stick", function (){
 
   it("Expected just a coffee", function(){
     const drinkOrder: Command = {
-      drinkOrder: {drink:'coffee', sugar : 0},
+      drinkOrder: {drink:'coffee', sugar : 0, stick: 'without_stick'},
       ammountGiven: 0.6
     }
-  const drinkMakerExpect: DrinkMaker = {
+  const drinkMakerExpect: DrinkOrder = {
     drink: 'coffee',
     sugar: 0,
     stick: 'without_stick'
@@ -30,7 +30,7 @@ it("Expected coffee with sugar and stick", function (){
 
   it("Expected not enough money", function(){
     const drinkOrder: Command = {
-      drinkOrder: {drink:'coffee', sugar : 0},
+      drinkOrder: {drink:'coffee', sugar : 0, stick: 'without_stick'},
       ammountGiven: 0.5
     }
 
